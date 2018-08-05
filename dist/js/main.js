@@ -5,11 +5,22 @@ const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
 
-// Set inital state of menu
+// Set initial state of menu
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
 
+navItems.forEach((navItem) => {
+  navItem.addEventListener('click', toggleCurrent);
+});
+
+// Toggle currently selected menu nav item
+function toggleCurrent(event) {
+  document.querySelector('.current').classList.remove('current');
+  event.target.classList.add('current');
+}
+
+// Toggle display state of menu
 function toggleMenu() {
   if (showMenu) {
     menuBtn.classList.remove('close');
