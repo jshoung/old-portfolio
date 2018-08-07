@@ -30,8 +30,6 @@ function toggleMenu() {
     navItems.forEach((item) => {
       item.classList.remove('show');
     });
-
-    showMenu = false;
   } else {
     menuBtn.classList.add('close');
     menu.classList.add('show');
@@ -40,7 +38,7 @@ function toggleMenu() {
     navItems.forEach((item) => {
       item.classList.add('show');
     });
-
-    showMenu = true;
   }
+
+  showMenu = !showMenu;
 }
