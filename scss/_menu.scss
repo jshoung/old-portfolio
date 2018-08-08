@@ -5,14 +5,16 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  @include easeOut();
+
+  @include easeOut;
 
   .btn-line {
     width: 28px;
     height: 2px;
     margin: 0 0 5px 0;
-    background: #fff;
-    @include easeOut();
+    background: set-text-color($primary-color);
+
+    @include easeOut;
   }
 
   // Rotate into X with menu lines
@@ -55,9 +57,11 @@
     float: left;
     width: 50%;
     height: 100vh;
-    @include easeOut();
+
+    @include easeOut;
+
     transition-delay: 0.25s;
-    
+
     &.show {
       transform: translate3d(0, 0, 0);
       transition-delay: 0s;
@@ -70,7 +74,6 @@
     background: darken($primary-color, 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
-
   }
 
   &-branding {
@@ -82,7 +85,7 @@
       width: 250px;
       border-radius: 50%;
       border: solid 3px $secondary-color;
-      background: url('../img/portrait.jpg');
+      background: url("../img/portrait.jpg");
       background-size: cover;
     }
   }
@@ -93,7 +96,8 @@
 
     &.show {
       transform: translate3d(0, 0, 0);
-      @include easeOut();
+
+      @include easeOut;
     }
   }
 
@@ -104,9 +108,10 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
-    @include easeOut();
+
+    @include easeOut;
 
     &.current, &:hover {
       color: $secondary-color;
@@ -117,7 +122,7 @@
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     &.show {
-      transition-delay: 0.5s - ($x * 0.1s);
+      transition-delay: 0.5s - $x * 0.1s;
     }
-  }  
+  }
 }
