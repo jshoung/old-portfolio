@@ -178,15 +178,12 @@ main {
   background: #515151;
   padding: 1em;
   border-bottom: #eece1a 5px solid; }
-
-.job-1 {
-  grid-area: job1; }
-
-.job-2 {
-  grid-area: job2; }
-
-.job-3 {
-  grid-area: job3; }
+  .job-1 {
+    grid-area: job-1; }
+  .job-2 {
+    grid-area: job-2; }
+  .job-3 {
+    grid-area: job-3; }
 
 #main-footer {
   text-align: center;
