@@ -46,11 +46,14 @@ header {
 
 .text-secondary {
   color: $secondary-color;
+  display: inline-block;
 }
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 50px);
+
+  // min-height: calc(100vh - 50px);
+  min-height: 100vh;
 
   .icons {
     margin-top: 1rem;
@@ -79,7 +82,7 @@ main {
   padding-top: 2em;
   display: grid;
   grid-gap: 2em;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job-1 job-2 job-3';
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -104,18 +107,18 @@ main {
   background: lighten($primary-color, 5);
   padding: 1em;
   border-bottom: $secondary-color 5px solid;
-}
 
-.job-1 {
-  grid-area: job1;
-}
+  &-1 {
+    grid-area: job-1;
+  }
 
-.job-2 {
-  grid-area: job2;
-}
+  &-2 {
+    grid-area: job-2;
+  }
 
-.job-3 {
-  grid-area: job3;
+  &-3 {
+    grid-area: job-3;
+  }
 }
 
 #main-footer {
@@ -125,6 +128,85 @@ main {
   color: set-text-color($primary-color);
   height: 50px;
   width: 100%;
+}
+
+.projects {
+  padding-top: 2em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(4, 1fr);
+
+  .project-display {
+    position: relative;
+
+    &:hover {
+      & .overlay-text {
+        @include easeOut;
+
+        opacity: 1;
+      }
+
+      & img {
+        @include easeOut;
+
+        opacity: 0.3;
+        border-color: $secondary-color;
+      }
+    }
+
+    img {
+      width: 100%;
+      border-radius: 1%;
+      border: 3px #fff solid;
+    }
+
+    .overlay-text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      opacity: 0;
+    }
+  }
+
+  .btn {
+    display: block;
+    padding: 0.5em 1em;
+    border: 0;
+    margin-bottom: 0.3em;
+
+    &:not(.btn-disabled):hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+    }
+
+    i {
+      margin-right: 0.75em;
+    }
+  }
+
+  .btn-light {
+    @extend .btn;
+
+    background: lighten($primary-color, 50);
+    color: set-text-color(lighten($primary-color, 50));
+  }
+
+  .btn-dark {
+    @extend .btn;
+
+    background: darken($primary-color, 50);
+    color: set-text-color(darken($primary-color, 50));
+  }
+
+  .btn-disabled {
+    opacity: 0.5;
+  }
 }
 
 @import "mobile";
