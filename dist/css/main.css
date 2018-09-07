@@ -151,39 +151,66 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+  main.showcase {
+    display: flex;
+    flex-direction: column; }
+    main.showcase .btn-back {
+      padding: 0.5em 1em;
+      border: 0;
+      margin-bottom: 1em;
+      background: #c4c4c4;
+      color: #000;
+      width: 7.5em;
+      height: 2.5em; }
+      main.showcase .btn-back:hover {
+        background: #eece1a;
+        color: #000; }
+      main.showcase .btn-back i {
+        margin-right: 0.75em; }
+
+.showcase-info {
+  padding-top: 2em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-areas: 'showcase-image showcase-about showcase-about';
+  grid-template-columns: repeat(3, 1fr); }
+  .showcase-info .showcase-image img {
+    grid-area: showcase-image;
+    width: 100%;
+    border-radius: 1%;
+    border: 3px #eece1a solid; }
+  .showcase-info .showcase-about {
+    grid-area: showcase-about; }
 
 .about-info {
   padding-top: 2em;
   display: grid;
   grid-gap: 2em;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job-1 job-2 job-3';
   grid-template-columns: repeat(3, 1fr); }
-
-.bio-image {
-  grid-area: bioimage;
-  height: 250px;
-  width: 250px;
-  margin: auto;
-  border-radius: 50%;
-  border: solid 5px #eece1a;
-  background: url("../img/portrait.jpg");
-  background-size: cover; }
-
-.bio {
-  grid-area: bio;
-  font-size: 1.5em;
-  padding: 1em; }
-
-.job {
-  background: #515151;
-  padding: 1em;
-  border-bottom: #eece1a 5px solid; }
-  .job-1 {
-    grid-area: job-1; }
-  .job-2 {
-    grid-area: job-2; }
-  .job-3 {
-    grid-area: job-3; }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    border-radius: 50%;
+    border: solid 5px #eece1a;
+    background: url("../img/portrait.jpg");
+    background-size: cover; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5em;
+    padding: 1em; }
+  .about-info .job {
+    background: #515151;
+    padding: 1em;
+    border-bottom: #eece1a 5px solid; }
+    .about-info .job-1 {
+      grid-area: job-1; }
+    .about-info .job-2 {
+      grid-area: job-2; }
+    .about-info .job-3 {
+      grid-area: job-3; }
 
 #main-footer {
   text-align: center;
@@ -192,6 +219,58 @@ main {
   color: #fff;
   height: 50px;
   width: 100%; }
+
+.projects {
+  padding-top: 2em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(4, 1fr); }
+  .projects .project-display {
+    position: relative; }
+    .projects .project-display:hover .overlay-text {
+      transition: all 0.5s ease-out;
+      opacity: 1; }
+    .projects .project-display:hover img {
+      transition: all 0.5s ease-out;
+      opacity: 0.3;
+      border-color: #eece1a; }
+    .projects .project-display img {
+      width: 100%;
+      border-radius: 1%;
+      border: 3px #fff solid; }
+    .projects .project-display .overlay-text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      opacity: 0; }
+  .projects .btn, .projects .btn-light, .projects .btn-dark {
+    display: block;
+    padding: 0.5em 1em;
+    border: 0;
+    margin-bottom: 0.3em; }
+    .projects .btn:not(.btn-disabled):hover, .projects .btn-light:not(.btn-disabled):hover, .projects .btn-dark:not(.btn-disabled):hover {
+      background: #eece1a;
+      color: #000; }
+    .projects .btn i, .projects .btn-light i, .projects .btn-dark i {
+      margin-right: 0.75em; }
+  .projects .btn-light {
+    background: #c4c4c4;
+    color: #000; }
+  .projects .btn-dark {
+    background: black;
+    color: #fff; }
+  .projects .btn-disabled {
+    opacity: 0.5; }
+
+@media screen and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -222,9 +301,16 @@ main {
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-areas: 'bioimage' 'bio' 'job-1' 'job-2' 'job-3';
+    grid-template-columns: 1fr; }
+  .showcase-info {
+    grid-template-areas: 'showcase-image' 'showcase-about';
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; } }
