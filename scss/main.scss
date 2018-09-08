@@ -116,10 +116,18 @@ main {
       border-radius: 1%;
       border: 3px $secondary-color solid;
     }
+
+    iframe {
+      grid-area: showcase-image;
+      width: 100%;
+      border-radius: 1%;
+      border: 3px $secondary-color solid;
+    }
   }
 
   .showcase-about {
     grid-area: showcase-about;
+    padding: 1em;
   }
 }
 
@@ -251,6 +259,35 @@ main {
 
   .btn-disabled {
     opacity: 0.5;
+  }
+}
+
+.boxes {
+  padding-top: 2em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  div {
+    font-size: 2em;
+    border: 3px #fff solid;
+    padding: 1em 1em;
+    margin: 0 auto;
+    word-wrap: break-word;
+
+    @include easeOut;
+
+    &:hover {
+      padding: 1.5em 1em;
+
+      // padding: 1em 1.5em;
+      border-color: $secondary-color;
+
+      // background: $secondary-color;
+      // color: set-text-color($secondary-color);
+      color: #fff;
+    }
   }
 }
 

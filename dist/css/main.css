@@ -274,6 +274,24 @@ main {
   .projects .btn-disabled {
     opacity: 0.5; }
 
+.boxes {
+  padding-top: 2em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr;
+  align-items: center; }
+  .boxes div {
+    font-size: 2em;
+    border: 3px #fff solid;
+    padding: 1em 1em;
+    margin: 0 auto;
+    word-wrap: break-word;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 1.5em 1em;
+      border-color: #eece1a;
+      color: #fff; }
+
 @media screen and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
