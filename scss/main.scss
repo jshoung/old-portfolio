@@ -89,8 +89,8 @@ main {
       margin-bottom: 1rem;
       background: lighten($primary-color, 50);
       color: set-text-color(lighten($primary-color, 50));
-      width: 7.5rem;
-      height: 2.5rem;
+      width: 120px;
+      height: 40px;
 
       &:hover {
         background: $secondary-color;

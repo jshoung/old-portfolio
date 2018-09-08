@@ -162,8 +162,8 @@ main {
       margin-bottom: 1rem;
       background: #c4c4c4;
       color: #000;
-      width: 7.5rem;
-      height: 2.5rem; }
+      width: 120px;
+      height: 40px; }
       main.showcase .btn-back:hover {
         background: #eece1a;
         color: #000; }
