@@ -157,23 +157,23 @@ main {
     display: flex;
     flex-direction: column; }
     main.showcase .btn-back {
-      padding: 0.5em 1em;
+      padding: 0.5rem 1rem;
       border: 0;
-      margin-bottom: 1em;
+      margin-bottom: 1rem;
       background: #c4c4c4;
       color: #000;
-      width: 7.5em;
-      height: 2.5em; }
+      width: 7.5rem;
+      height: 2.5rem; }
       main.showcase .btn-back:hover {
         background: #eece1a;
         color: #000; }
       main.showcase .btn-back i {
-        margin-right: 0.75em; }
+        margin-right: 0.75rem; }
 
 .showcase-info {
-  padding-top: 2em;
+  padding-top: 2rem;
   display: grid;
-  grid-gap: 2em;
+  grid-gap: 2rem;
   grid-template-areas: 'showcase-image showcase-about showcase-about';
   grid-template-columns: repeat(3, 1fr); }
   .showcase-info .showcase-image img {
@@ -188,12 +188,12 @@ main {
     border: 3px #eece1a solid; }
   .showcase-info .showcase-about {
     grid-area: showcase-about;
-    padding: 1em; }
+    padding: 1rem; }
 
 .about-info {
-  padding-top: 2em;
+  padding-top: 2rem;
   display: grid;
-  grid-gap: 2em;
+  grid-gap: 2rem;
   grid-template-areas: 'bioimage bio bio' 'job-1 job-2 job-3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
@@ -207,11 +207,11 @@ main {
     background-size: cover; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5em;
-    padding: 1em; }
+    font-size: 1.5rem;
+    padding: 1rem; }
   .about-info .job {
     background: #515151;
-    padding: 1em;
+    padding: 1rem;
     border-bottom: #eece1a 5px solid; }
     .about-info .job-1 {
       grid-area: job-1; }
@@ -222,16 +222,16 @@ main {
 
 #main-footer {
   text-align: center;
-  padding: 0.9em;
+  padding: 0.9rem;
   background: #3f3f3f;
   color: #fff;
   height: 50px;
   width: 100%; }
 
 .projects {
-  padding-top: 2em;
+  padding-top: 2rem;
   display: grid;
-  grid-gap: 2em;
+  grid-gap: 2rem;
   grid-template-columns: repeat(4, 1fr); }
   .projects .project-display {
     position: relative; }
@@ -259,14 +259,14 @@ main {
       opacity: 0; }
   .projects .btn, .projects .btn-light, .projects .btn-dark {
     display: block;
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
     border: 0;
-    margin-bottom: 0.3em; }
+    margin-bottom: 0.3rem; }
     .projects .btn:not(.btn-disabled):hover, .projects .btn-light:not(.btn-disabled):hover, .projects .btn-dark:not(.btn-disabled):hover {
       background: #eece1a;
       color: #000; }
     .projects .btn i, .projects .btn-light i, .projects .btn-dark i {
-      margin-right: 0.75em; }
+      margin-right: 0.75rem; }
   .projects .btn-light {
     background: #c4c4c4;
     color: #000; }
@@ -277,20 +277,20 @@ main {
     opacity: 0.5; }
 
 .boxes {
-  padding-top: 2em;
+  padding-top: 2rem;
   display: grid;
-  grid-gap: 2em;
+  grid-gap: 2rem;
   grid-template-columns: 1fr;
   align-items: center; }
   .boxes div {
-    font-size: 2em;
+    font-size: 2rem;
     border: 3px #fff solid;
-    padding: 1em 1em;
+    padding: 1rem 1rem;
     margin: 0 auto;
     word-wrap: break-word;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 1.5em 1.5em;
+      padding: 1.5rem 1.5rem;
       border-color: #eece1a;
       color: #fff;
       -webkit-transform: none;
@@ -336,6 +336,8 @@ main {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job-1' 'job-2' 'job-3';
     grid-template-columns: 1fr; }
+    .about-info .bio {
+      font-size: 1.25rem; }
   .showcase-info {
     grid-template-areas: 'showcase-image' 'showcase-about';
     grid-template-columns: 1fr; }
