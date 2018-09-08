@@ -354,6 +354,8 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 3em; }
+    main.showcase .btn-back {
+      width: 150px; }
   .boxes {
     font-size: 0.5em; }
   .projects {

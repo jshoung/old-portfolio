@@ -98,6 +98,12 @@
       margin-top: 1rem;
       font-size: 3em;
     }
+
+    &.showcase {
+      .btn-back {
+        width: 150px;
+      }
+    }
   }
 
   .boxes {
