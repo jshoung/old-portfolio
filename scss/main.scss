@@ -51,9 +51,11 @@ header {
 
 main {
   padding: 4rem;
-
-  // min-height: calc(100vh - 50px);
   min-height: 100vh;
+
+  span.line {
+    display: inline-block;
+  }
 
   .icons {
     margin-top: 1rem;
