@@ -140,6 +140,8 @@ header {
 main {
   padding: 4rem;
   min-height: 100vh; }
+  main span.line {
+    display: inline-block; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -288,9 +290,13 @@ main {
     word-wrap: break-word;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 1.5em 1em;
+      padding: 1.5em 1.5em;
       border-color: #eece1a;
-      color: #fff; }
+      color: #fff;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      transform: none; }
 
 @media screen and (max-width: 1170px) {
   .projects {

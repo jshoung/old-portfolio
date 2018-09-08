@@ -281,14 +281,13 @@ main {
     @include easeOut;
 
     &:hover {
-      padding: 1.5em 1em;
-
-      // padding: 1em 1.5em;
+      padding: 1.5em 1.5em;
       border-color: $secondary-color;
-
-      // background: $secondary-color;
-      // color: set-text-color($secondary-color);
       color: #fff;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      transform: none;
     }
   }
 }
