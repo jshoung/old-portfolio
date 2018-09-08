@@ -188,6 +188,7 @@ main {
     border: 3px #eece1a solid; }
   .showcase-info .showcase-about {
     grid-area: showcase-about;
+    font-size: 1.1rem;
     padding: 1rem; }
 
 .about-info {
@@ -343,8 +344,8 @@ main {
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
-  .boxes {
-    font-size: 0.6em; } }
+  .boxes div {
+    font-size: 1.25rem; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -356,7 +357,7 @@ main {
       font-size: 3em; }
     main.showcase .btn-back {
       width: 150px; }
-  .boxes {
-    font-size: 0.5em; }
+  .boxes div {
+    font-size: 1rem; }
   .projects {
     grid-template-columns: 1fr; } }
