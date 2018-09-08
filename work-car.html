@@ -7,10 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" type="image/png" href="/dist/img/favicon.png" />
   <link rel="apple-touch-icon-precomposed" href="/dist/img/computer-152-216996.png">
-  <title>LPC1769 LPCXpresso</title>
+  <title>Arduino Car</title>
 </head>
 
 <body id="bg-img">
@@ -60,28 +61,35 @@
       <i class="fas fa-arrow-circle-left"></i>Go Back
     </a>
     <h1 class="lg-heading">
-      LPC1769 <span class="text-secondary">LPCXpresso</span>
+      Arduino <span class="text-secondary">Car</span>
     </h1>
     <div class="showcase-info">
       <div class="showcase-image">
-        <img src="./img/fpga.jpeg" alt="">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nJT4NbwJxtM" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
       </div>
       <div class="showcase-about">
         <h3 class="text-secondary">About this project</h3>
         <p>
-          I worked with the LPC1769 LPCXpresso Board as part of my NUS coursework.
+          As part of my NUS coursework, my group designed and built an autonomous vehicle that has the ability to follow a black line
+          marked on a white background by making use of the different reflectivity of dark and light surfaces.
+        </p>
+        <p>
+          We soldered Light Dependent Resistors (LDRs) to the car, which were used to dictate which wheels should be operating and
+          at what speed, based on LEDs soldered to the car.
         </p>
         <p>
           <ul>
-            <li>Worked with ARM Assembly and C programming langauges</li>
-            <li>LPC1769 LPCXpresso Board with NXP's ARM Cortex-M3</li>
+            <li>Integrated Arduino Uno, LDRs, LEDs, PCBs and Gearbox</li>
+            <li>Programmed using Arduino IDE</li>
           </ul>
         </p>
       </div>
     </div>
     </div>
   </main>
-  <script src="js/main.js"></script>
+  <script src="./dist/js/main.js"></script>
 </body>
 
 </html>

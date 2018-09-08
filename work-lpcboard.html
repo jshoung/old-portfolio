@@ -7,10 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" type="image/png" href="/dist/img/favicon.png" />
   <link rel="apple-touch-icon-precomposed" href="/dist/img/computer-152-216996.png">
-  <title>Contact</title>
+  <title>LPC1769 LPCXpresso</title>
 </head>
 
 <body id="bg-img">
@@ -37,7 +38,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="contact.html" class="nav-link current">
+          <a href="contact.html" class="nav-link">
             Contact
           </a>
         </li>
@@ -55,30 +56,33 @@
     </nav>
   </header>
 
-  <main id="about">
+  <main class="showcase">
+    <a href="work.html" class="btn-back">
+      <i class="fas fa-arrow-circle-left"></i>Go Back
+    </a>
     <h1 class="lg-heading">
-      Contact
-      <span class="text-secondary">Me</span>
+      LPC1769 <span class="text-secondary">LPCXpresso</span>
     </h1>
-    <div class="boxes">
-      <div>
-        <span class="text-secondary">Email: </span>
-        julian.shoung@gmail.com
+    <div class="showcase-info">
+      <div class="showcase-image">
+        <img src="./dist/img/fpga.jpeg" alt="">
       </div>
-      <div>
-        <span class="text-secondary">GitHub: </span>
-        <a href="https://github.com/jshoung">https://github.com/jshoung</a>
-      </div>
-      <div>
-        <span class="text-secondary">LinkedIn: </span>
-        <a href="https://www.linkedin.com/in/julian-shoung/">https://www.linkedin.com/in/julian-shoung/</a>
+      <div class="showcase-about">
+        <h3 class="text-secondary">About this project</h3>
+        <p>
+          I worked with the LPC1769 LPCXpresso Board as part of my NUS coursework.
+        </p>
+        <p>
+          <ul>
+            <li>Worked with ARM Assembly and C programming langauges</li>
+            <li>LPC1769 LPCXpresso Board with NXP's ARM Cortex-M3</li>
+          </ul>
+        </p>
       </div>
     </div>
+    </div>
   </main>
-  <!-- <footer id="main-footer">
-    Copyright &copy; 2018 | Julian Shoung
-  </footer> -->
-  <script src="js/main.js"></script>
+  <script src="./dist/js/main.js"></script>
 </body>
 
 </html>
