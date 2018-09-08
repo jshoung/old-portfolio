@@ -179,8 +179,14 @@ main {
     width: 100%;
     border-radius: 1%;
     border: 3px #eece1a solid; }
+  .showcase-info .showcase-image iframe {
+    grid-area: showcase-image;
+    width: 100%;
+    border-radius: 1%;
+    border: 3px #eece1a solid; }
   .showcase-info .showcase-about {
-    grid-area: showcase-about; }
+    grid-area: showcase-about;
+    padding: 1em; }
 
 .about-info {
   padding-top: 2em;
@@ -278,7 +284,10 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 5em; }
+  ul {
+    padding: 0; }
   .menu-nav, .menu-branding {
     float: none;
     width: 100%;
@@ -307,10 +316,19 @@ main {
     grid-template-areas: 'showcase-image' 'showcase-about';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes {
+    font-size: 0.6em; } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  main {
+    padding: 2em; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 3em; }
+  .boxes {
+    font-size: 0.5em; }
   .projects {
     grid-template-columns: 1fr; } }
